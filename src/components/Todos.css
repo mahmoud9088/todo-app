@@ -1,0 +1,143 @@
+.todos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todos .todo-title{
+    font-size: 80px;
+    font-weight: 900;
+    color:rgba(175, 47, 47, 0.2);
+    font-family: "Permanent Marker", cursive;   
+}
+
+.todos .todos-container{
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0,0.2);
+
+}
+
+
+
+.todos .todos-container .todos-form{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height:50px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    padding: 5px;
+
+}
+
+.todos .todos-form .todo-input{
+    height:100%;  
+    flex-grow: 1;
+    padding:5px;
+    border:none;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Indie Flower', cursive;
+    outline-style: none;
+}
+.todos .todos-form .add-btn{
+    padding:10px 5px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+
+}
+.todos .todos-form .add-btn-svg:hover{
+    fill:rgba(175, 47, 47)
+}
+
+.todos .todos-container .todos-list .todo-item{
+    padding:20px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    font-weight: 400;
+}
+
+
+.todos .todos-container .todos-list .todo-item .remove-todo{
+    color:rgba(175, 47, 47, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+}
+.todos .todos-container .todos-list .todo-item .remove-todo:hover{
+    color:rgba(175, 47, 47);
+}
+.todos .todos-container .filter-btns{
+    background-color: white;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    padding:20px;
+}
+.todos .todos-container .filter-btns button{
+    background-color: white;
+    outline-style: none;
+    border-radius: 5px;
+    border:1px solid rgba(175, 47, 47, 0.2);
+    flex-grow: 1;
+    padding:10px 5px;
+    cursor: pointer;
+
+}
+
+.todos .todos-container .clear-btn{
+    width: 60%;
+    padding:10px;
+    background-color: white;
+    border:1px solid rgba(175, 47, 47, 0.2);
+    border-radius: 5px;
+    outline-style: none;
+    cursor: pointer;
+
+}
+
+button:hover{
+    color:rgb(175, 47, 47);
+    background-color: rgb(247, 247, 247);
+    transform: scale(1.05);
+}
+
+
+.active-filter{
+    background-color:rgba(175, 47, 47,0.2) !important;
+}
+.completed{
+    text-decoration: line-through;
+    color:rgba(0, 0, 0, 0.2)
+}
+
+
+@media screen and (max-width:990px){
+    .todos .todos-container{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width:700px){
+    .todos .todos-container{
+        width: 60%;
+    }
+
+}
+@media screen and (max-width:600px){
+    .todos .todos-container{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width:450px){
+    .todos .todos-container{
+        width: 85%;
+    }
+
+}

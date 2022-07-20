@@ -1,0 +1,24 @@
+*,*::after,*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* transition: all 0.4s; */
+
+}
+
+
+body {
+  font-family: 'Indie Flower', cursive;
+  margin: 0px;
+  height:auto;
+  background-color: rgb(247, 247, 247);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+ 
+}
+::-webkit-scrollbar {
+  display:none;
+  width:0;
+}
